@@ -1,12 +1,15 @@
 import { Outlet } from "react-router";
 import Header from "./Header";
 import Footer from "./Footer";
+import * as styles from "./Layout.css";
 
 const Layout = () => {
   return (
     <>
-      <Header />
-      <Outlet />
+      <div className="backgroundImage h-screen">
+        <Header />
+        <Outlet />
+      </div>
       <Footer />
     </>
   );
