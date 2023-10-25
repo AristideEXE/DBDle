@@ -1,7 +1,5 @@
 const Accueil = () => {
-    return (
-        <p>🐅️</p>
-    )
-}
+  return <p>🐅️</p>;
+};
 
 export default Accueil;

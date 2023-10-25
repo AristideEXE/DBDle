@@ -3,7 +3,7 @@ import "./App.css";
 import Accueil from "./pages/Accueil/Accueil";
 import Classique from "./pages/Classique/Classique";
 
-const App = () => {  
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -14,7 +14,7 @@ const App = () => {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
 
 export default App;

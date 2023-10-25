@@ -1,5 +1,5 @@
 const Classique = () => {
-    return <p>🐎️</p>
-}
+  return <p>🐎️</p>;
+};
 
 export default Classique;
