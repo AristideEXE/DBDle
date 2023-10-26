@@ -4,8 +4,8 @@
   border-color: rgba(255, 255, 255, 0.219);
   color: white;
   padding: 20px;
-  min-width: 500px;
   border-radius: 3px;
+  font-family: "DeadByDaylight";
   transition: 0.2s;
 }
 

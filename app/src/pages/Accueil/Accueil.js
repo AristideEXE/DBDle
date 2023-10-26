@@ -6,10 +6,10 @@ const Accueil = () => {
   return (
     <div className="w-2/5 flex flex-col space-y-10">
       <Link to={survivantPath}>
-        <Button className="w-full">Survivant</Button>
+        <Button className="w-full">survivant</Button>
       </Link>
       <Link to={tueurPath}>
-        <Button className="w-full">Tueur</Button>
+        <Button className="w-full">tueur</Button>
       </Link>
     </div>
   );

@@ -1,6 +1,17 @@
-.backgroundImage {
+.content {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("https://images.alphacoders.com/106/1062567.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
 }

@@ -6,17 +6,15 @@ import styles from "./Layout.module.css";
 
 const Layout = () => {
   return (
-    <>
-      <div
-        class={classnames(styles.backgroundImage, "h-screen overflow-y-hidden")}
-      >
+    <div className={styles.layout}>
+      <div className={styles.content}>
         <Header />
-        <section className="flex items-center justify-center w-full h-full pb-32">
+        <section className="flex items-center justify-center">
           <Outlet />
         </section>
-        <Footer />
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 

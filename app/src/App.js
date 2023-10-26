@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import "./fonts/fonts.css";
 import Accueil from "./pages/Accueil/Accueil";
 import Survivant from "./pages/Survivant/Survivant";
 import Layout from "./pages/Layout/Layout";
