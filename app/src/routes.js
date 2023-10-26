@@ -1,2 +1,3 @@
 export const indexPath = "/";
-export const classiquePath = "/classique";
+export const survivantPath = "/survivant";
+export const tueurPath = "/tueur";

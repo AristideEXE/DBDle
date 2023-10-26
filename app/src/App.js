@@ -1,9 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Accueil from "./pages/Accueil/Accueil";
-import Classique from "./pages/Classique/Classique";
+import Survivant from "./pages/Survivant/Survivant";
 import Layout from "./pages/Layout/Layout";
-import { classiquePath, indexPath } from "./routes";
+import { survivantPath, indexPath, tueurPath } from "./routes";
+import Tueur from "./pages/Tueur/Tueur";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       <Routes>
         <Route path={indexPath} element={<Layout />}>
           <Route index element={<Accueil />} />
-          <Route path={classiquePath} element={<Classique />} />
+          <Route path={survivantPath} element={<Survivant />} />
+          <Route path={tueurPath} element={<Tueur />} />
           <Route path="*" element={<p>Page introuvable</p>} />
         </Route>
       </Routes>

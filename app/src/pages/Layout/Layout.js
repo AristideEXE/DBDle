@@ -1,16 +1,19 @@
 import { Outlet } from "react-router";
 import Header from "./Header";
 import Footer from "./Footer";
-import * as styles from "./Layout.css";
+import classnames from "classnames";
+import styles from "./Layout.module.css";
 
 const Layout = () => {
   return (
     <>
-      <div className="backgroundImage h-screen overflow-y-hidden">
+      <div
+        class={classnames(styles.backgroundImage, "h-screen overflow-y-hidden")}
+      >
         <Header />
-        <div className="flex items-center justify-center w-full h-full pb-32">
+        <section className="flex items-center justify-center w-full h-full pb-32">
           <Outlet />
-        </div>
+        </section>
         <Footer />
       </div>
     </>

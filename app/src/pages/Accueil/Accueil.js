@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
-import Button from "../../components/Button";
-import { classiquePath } from "../../routes";
+import Button from "../../components/Button/Button";
+import { survivantPath, tueurPath } from "../../routes";
 
 const Accueil = () => {
   return (
-    <>
-        <Link to={classiquePath}>
-            <Button>Classique</Button>
-        </Link>
-    </>
+    <div className="w-2/5 flex flex-col space-y-10">
+      <Link to={survivantPath}>
+        <Button className="w-full">Survivant</Button>
+      </Link>
+      <Link to={tueurPath}>
+        <Button className="w-full">Tueur</Button>
+      </Link>
+    </div>
   );
 };
 
