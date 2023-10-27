@@ -6,6 +6,7 @@ import Survivant from "./pages/Survivant/Survivant";
 import Layout from "./pages/Layout/Layout";
 import { survivantPath, indexPath, tueurPath } from "./routes";
 import Tueur from "./pages/Tueur/Tueur";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
   return (

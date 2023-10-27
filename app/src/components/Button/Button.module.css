@@ -2,6 +2,7 @@
   background-color: transparent;
   color: white;
   font-family: "DeadByDaylight";
+  text-transform: lowercase;
   transition: 0.2s;
   border-image: url(ButtonFrame.png) 30;
   border-width: 10px;
