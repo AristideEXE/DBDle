@@ -2,8 +2,7 @@ import CharacterSelect from "../../components/CharacterSelect/CharacterSelect";
 
 const Survivant = () => {
   return (
-    <>
-      <h1>Survivant</h1>
+    <div className="md:w-1/2 w-full flex justify-center">
       <CharacterSelect
         options={[
           { id: "1", nom: "Meg Thomas" },
@@ -11,7 +10,7 @@ const Survivant = () => {
           { id: "3", nom: "Kate Denson" },
         ]}
       />
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,15 @@
+.characterSelect {
+  background-color: transparent;
+  border-image: url(SelectFrame.png) 30;
+  border-width: 10px;
+  border-style: solid;
+  width: 90%;
+  color: var(--color-text);
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.characterSelect:hover {
+  opacity: 1;
+  cursor: pointer;
+}

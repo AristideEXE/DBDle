@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 import Select from "react-select";
+import classnames from "classnames";
+import styles from "./CharacterSelect.module.css";
 
 const CharacterSelect = ({
   options,
@@ -14,6 +16,7 @@ const CharacterSelect = ({
 }) => {
   return (
     <Select
+      className={classnames(className, styles.characterSelect)}
       options={options}
       getOptionLabel={getOptionLabel}
       getOptionValue={getOptionValue}
@@ -22,6 +25,18 @@ const CharacterSelect = ({
       isClearable={isClearable}
       isSearchable={isSearchable}
       loadingMessage={loadingMessage}
+      unstyled={true}
+      styles={{
+        menuList: () => ({
+          marginTop: "20px",
+        }),
+        option: () => ({
+          padding: "15px",
+          border: "1px solid white",
+          borderCollapse: "collapse",
+          backgroundColor: "rgba(0, 0, 0, 0.6)",
+        }),
+      }}
     />
   );
 };
@@ -30,6 +45,7 @@ const optionToLabelFunc = (option) => option.nom;
 const optionToValueFunc = (option) => option.id;
 
 CharacterSelect.propTypes = {
+  className: PropTypes.string,
   options: PropTypes.array.isRequired,
   toOptionLabelFunc: PropTypes.func,
   getOptionValue: PropTypes.func,
